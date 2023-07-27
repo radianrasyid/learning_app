@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "526062626130",
+    "project_id": "flutter-radian",
+    "storage_bucket": "flutter-radian.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526062626130:android:a2c9bc76ba0fa53a67468b",
+        "android_client_info": {
+          "package_name": "com.radian.training_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526062626130-afdrn99k8jjeq9im32jn38959c9rua0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsD8f4vtCVS5h3FBm0hC0puyFsozz1584"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526062626130-afdrn99k8jjeq9im32jn38959c9rua0f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "526062626130-geoee52ee25jck5vr8qvrcp87gu3i96g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.trainingApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
