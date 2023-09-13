@@ -114,7 +114,7 @@ class _SignInState extends State<SignIn> {
                             width: double.infinity,
                             child: ElevatedButton(
                               onPressed: () {
-                                Navigator.of(context).pushNamed("signup");
+                                Navigator.of(context).pushNamed("/register");
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: AppColors.primaryBackground,

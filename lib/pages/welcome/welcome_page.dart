@@ -122,10 +122,7 @@ class _WelcomeState extends State<Welcome> {
               pageController.animateToPage(index,
                   duration: const Duration(milliseconds: 300),
                   curve: Curves.easeInOutCubic);
-            } else {
-              Navigator.of(context)
-                  .pushNamedAndRemoveUntil("signIn", (route) => false);
-            }
+            } else {}
           },
           child: Container(
             margin: EdgeInsets.only(top: 100.h, left: 25.w, right: 25.w),

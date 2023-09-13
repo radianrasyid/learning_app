@@ -40,14 +40,7 @@ class MyApp extends StatelessWidget {
                         splashColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                       )),
-                  home:
-                      BlocProvider.of<AuthBloc>(context).state.email.isEmpty &&
-                              BlocProvider.of<AuthBloc>(context)
-                                  .state
-                                  .username
-                                  .isEmpty
-                          ? const SignIn()
-                          : const ApplicationPage(),
+                  home: const SignIn(),
                   routes: {
                     // 'myHomePage': (context) => const MyHomePage(),
                     'welcomeScreen': (context) => const Welcome(),
@@ -62,60 +55,3 @@ class MyApp extends StatelessWidget {
         ));
   }
 }
-
-// class MyHomePage extends StatelessWidget {
-//   const MyHomePage({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         // TRY THIS: Try changing the color here to a specific color (to
-//         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-//         // change color while the other colors stay the same.
-//         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-//         // Here we take the value from the MyHomePage object that was created by
-//         // the App.build method, and use it to set our appbar title.
-//         title: const Text("Learning App"),
-//       ),
-//       body: Center(
-//           // Center is a layout widget. It takes a single child and positions it
-//           // in the middle of the parent.
-//           child: BlocBuilder<HomeBlocs, HomeStates>(
-//         builder: (context, state) {
-//           return Column(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: <Widget>[
-//               const Text(
-//                 'You have pushed the button this many times:',
-//               ),
-//               Text(
-//                 "${BlocProvider.of<HomeBlocs>(context).state.counter}",
-//                 style: Theme.of(context).textTheme.headlineMedium,
-//               ),
-//             ],
-//           );
-//         },
-//       )),
-//       floatingActionButton: Row(
-//         mainAxisAlignment: MainAxisAlignment.spaceAround,
-//         children: [
-//           FloatingActionButton(
-//             heroTag: 'decrement-btn',
-//             onPressed: () =>
-//                 BlocProvider.of<HomeBlocs>(context).add(Decrement()),
-//             tooltip: 'Decrement',
-//             child: const Icon(Icons.add),
-//           ),
-//           FloatingActionButton(
-//             heroTag: 'increment-btn',
-//             onPressed: () =>
-//                 BlocProvider.of<HomeBlocs>(context).add(Increment()),
-//             tooltip: 'Increment',
-//             child: const Icon(Icons.add),
-//           )
-//         ],
-//       ), // This trailing comma makes auto-formatting nicer for build methods.
-//     );
-//   }
-// }
